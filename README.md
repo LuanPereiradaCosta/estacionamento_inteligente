@@ -68,10 +68,10 @@ estacionamento-inteligente/
 |   `-- vagas.json
 |
 |-- frontend/
-|   |-- index.html
 |   |-- style.css
 |   `-- script.js
 |
+|-- index.html
 |-- requirements.txt
 |-- .gitignore
 `-- README.md
@@ -124,10 +124,24 @@ http://127.0.0.1:8000/docs
 Abra o arquivo:
 
 ```text
-frontend/index.html
+index.html
 ```
 
 Tambem e possivel abrir usando a extensao Live Server do VS Code.
+
+## Observacao Sobre GitHub Pages
+
+O arquivo `index.html` fica na raiz do projeto para o GitHub Pages abrir o painel automaticamente.
+
+Importante: o GitHub Pages hospeda apenas arquivos estaticos do frontend. Ele nao roda o backend FastAPI.
+
+Para o painel buscar dados reais, a API precisa estar rodando localmente em:
+
+```text
+http://127.0.0.1:8000
+```
+
+Ou, futuramente, o backend precisara ser hospedado em outro servico proprio para Python/FastAPI.
 
 ## Rotas da API
 
