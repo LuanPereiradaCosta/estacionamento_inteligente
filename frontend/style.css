@@ -1,0 +1,268 @@
+:root {
+  --fundo: #f4f6f8;
+  --texto: #18212f;
+  --texto-fraco: #667085;
+  --linha: #d9e0e8;
+  --branco: #ffffff;
+  --verde: #15803d;
+  --verde-fundo: #dcfce7;
+  --vermelho: #b42318;
+  --vermelho-fundo: #fee4e2;
+  --azul: #2563eb;
+  --azul-escuro: #1d4ed8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--texto);
+  background: var(--fundo);
+}
+
+.pagina {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.etiqueta,
+.rotulo,
+.status-api {
+  margin: 0;
+  color: var(--texto-fraco);
+  font-size: 14px;
+}
+
+h1,
+h2 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+.resumo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.indicador,
+.catraca,
+.painel,
+.vaga {
+  border: 1px solid var(--linha);
+  border-radius: 8px;
+  background: var(--branco);
+}
+
+.indicador {
+  padding: 18px;
+}
+
+.indicador strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 34px;
+}
+
+.indicador-livre strong {
+  color: var(--verde);
+}
+
+.indicador-ocupada strong {
+  color: var(--vermelho);
+}
+
+.catraca {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 18px;
+}
+
+.botao-catraca {
+  min-height: 44px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 8px;
+  color: var(--branco);
+  background: var(--azul);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.botao-catraca:hover {
+  background: var(--azul-escuro);
+}
+
+.botao-catraca:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.painel {
+  padding: 20px;
+}
+
+.painel-topo {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.lista-vagas {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(120px, 1fr));
+  gap: 14px;
+}
+
+.vaga {
+  min-height: 150px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vaga strong {
+  font-size: 20px;
+}
+
+.vaga-livre {
+  border-color: #86efac;
+  background: var(--verde-fundo);
+}
+
+.vaga-ocupada {
+  border-color: #fda29b;
+  background: var(--vermelho-fundo);
+}
+
+.status-vaga {
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: var(--branco);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.status-livre {
+  background: var(--verde);
+}
+
+.status-ocupada {
+  background: var(--vermelho);
+}
+
+.ultima-atualizacao {
+  margin: 12px 0 0;
+  color: var(--texto-fraco);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.mensagem-erro {
+  grid-column: 1 / -1;
+  padding: 16px;
+  border: 1px solid #fda29b;
+  border-radius: 8px;
+  color: var(--vermelho);
+  background: var(--vermelho-fundo);
+}
+
+@media (max-width: 760px) {
+  .pagina {
+    width: min(100% - 20px, 560px);
+    padding: 20px 0;
+  }
+
+  .cabecalho,
+  .catraca,
+  .painel-topo {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .resumo {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .indicador {
+    padding: 12px 10px;
+  }
+
+  .indicador strong {
+    margin-top: 6px;
+    font-size: 26px;
+  }
+
+  .rotulo {
+    font-size: 12px;
+  }
+
+  .vaga {
+    min-height: 118px;
+    padding: 12px;
+  }
+
+  .lista-vagas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .lista-vagas .vaga:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 5px);
+  }
+
+  .vaga strong {
+    font-size: 17px;
+  }
+
+  .ultima-atualizacao {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+
+  .status-vaga {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 980px) {
+  .lista-vagas {
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+  }
+}

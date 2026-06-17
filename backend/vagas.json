@@ -1,0 +1,131 @@
+{
+  "vagas": [
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "ultima_atualizacao": "2026-06-17 10:05:59"
+    },
+    {
+      "id": 2,
+      "nome": "Vaga 2",
+      "ocupada": false,
+      "ultima_atualizacao": "2026-06-17 10:05:26"
+    },
+    {
+      "id": 3,
+      "nome": "Vaga 3",
+      "ocupada": false,
+      "ultima_atualizacao": "2026-06-17 08:00:00"
+    },
+    {
+      "id": 4,
+      "nome": "Vaga 4",
+      "ocupada": false,
+      "ultima_atualizacao": "2026-06-17 08:00:00"
+    },
+    {
+      "id": 5,
+      "nome": "Vaga 5",
+      "ocupada": true,
+      "ultima_atualizacao": "2026-06-17 10:10:10"
+    }
+  ],
+  "historico": [
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-17 09:08:00"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-17 09:10:06"
+    },
+    {
+      "id": 2,
+      "nome": "Vaga 2",
+      "ocupada": false,
+      "data": "2026-06-17 09:10:18"
+    },
+    {
+      "id": 2,
+      "nome": "Vaga 2",
+      "ocupada": true,
+      "data": "2026-06-17 09:12:49"
+    },
+    {
+      "id": 2,
+      "nome": "Vaga 2",
+      "ocupada": true,
+      "data": "2026-06-17 09:14:35"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-17 09:52:05"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-17 09:53:07"
+    },
+    {
+      "id": 2,
+      "nome": "Vaga 2",
+      "ocupada": false,
+      "data": "2026-06-17 09:53:11"
+    },
+    {
+      "id": 2,
+      "nome": "Vaga 2",
+      "ocupada": true,
+      "data": "2026-06-17 10:05:12"
+    },
+    {
+      "id": 2,
+      "nome": "Vaga 2",
+      "ocupada": false,
+      "data": "2026-06-17 10:05:26"
+    },
+    {
+      "id": 5,
+      "nome": "Vaga 5",
+      "ocupada": true,
+      "data": "2026-06-17 10:05:40"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-17 10:05:47"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-17 10:05:59"
+    },
+    {
+      "id": 5,
+      "nome": "Vaga 5",
+      "ocupada": false,
+      "data": "2026-06-17 10:06:09"
+    },
+    {
+      "id": 5,
+      "nome": "Vaga 5",
+      "ocupada": true,
+      "data": "2026-06-17 10:10:10"
+    }
+  ],
+  "catraca": {
+    "aberta": false,
+    "comando": "fechar",
+    "ultima_atualizacao": "2026-06-17 10:26:50"
+  }
+}

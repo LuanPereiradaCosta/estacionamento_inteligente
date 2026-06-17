@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estacionamento Inteligente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="pagina">
+    <header class="cabecalho">
+      <div>
+        <p class="etiqueta">Painel web</p>
+        <h1>Estacionamento Inteligente</h1>
+      </div>
+    </header>
+
+    <section class="resumo" aria-label="Resumo das vagas">
+      <article class="indicador">
+        <span class="rotulo">Total</span>
+        <strong id="total-vagas">0</strong>
+      </article>
+      <article class="indicador indicador-livre">
+        <span class="rotulo">Livres</span>
+        <strong id="vagas-livres">0</strong>
+      </article>
+      <article class="indicador indicador-ocupada">
+        <span class="rotulo">Ocupadas</span>
+        <strong id="vagas-ocupadas">0</strong>
+      </article>
+    </section>
+
+    <section class="catraca" aria-label="Controle da catraca">
+      <div>
+        <p class="etiqueta">Controle manual</p>
+        <h2>Catraca</h2>
+        <p id="status-catraca" class="status-api">Catraca fechada.</p>
+      </div>
+      <button id="botao-catraca" class="botao-catraca" type="button">Abrir catraca</button>
+    </section>
+
+    <section class="painel">
+      <div class="painel-topo">
+        <div>
+          <p class="etiqueta">Mapa simples</p>
+          <h2>Status das vagas</h2>
+        </div>
+        <p id="status-api" class="status-api">Carregando dados...</p>
+      </div>
+
+      <div id="lista-vagas" class="lista-vagas" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="script.js?v=cronometro"></script>
+</body>
+</html>

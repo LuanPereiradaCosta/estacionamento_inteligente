@@ -1,0 +1,21 @@
+# Ambiente virtual local do Python
+.venv/
+venv/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+
+# Arquivos temporarios de ferramentas
+.pytest_cache/
+.mypy_cache/
+
+# Configuracoes locais do editor
+.vscode/
+
+# Instrucoes locais usadas pelo assistente de desenvolvimento
+AGENTS.md
+
+# Arquivos locais do sistema operacional
+Thumbs.db
+.DS_Store
