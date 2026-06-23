@@ -4,25 +4,25 @@
       "id": 1,
       "nome": "Vaga 1",
       "ocupada": false,
-      "ultima_atualizacao": "2026-06-17 10:05:59"
+      "ultima_atualizacao": "2026-06-23 20:12:20"
     },
     {
       "id": 2,
       "nome": "Vaga 2",
-      "ocupada": false,
-      "ultima_atualizacao": "2026-06-17 10:05:26"
+      "ocupada": true,
+      "ultima_atualizacao": "2026-06-23 20:05:37"
     },
     {
       "id": 3,
       "nome": "Vaga 3",
-      "ocupada": false,
-      "ultima_atualizacao": "2026-06-17 08:00:00"
+      "ocupada": true,
+      "ultima_atualizacao": "2026-06-23 20:05:36"
     },
     {
       "id": 4,
       "nome": "Vaga 4",
-      "ocupada": false,
-      "ultima_atualizacao": "2026-06-17 08:00:00"
+      "ocupada": true,
+      "ultima_atualizacao": "2026-06-23 20:05:36"
     },
     {
       "id": 5,
@@ -121,11 +121,209 @@
       "nome": "Vaga 5",
       "ocupada": true,
       "data": "2026-06-17 10:10:10"
+    },
+    {
+      "id": 3,
+      "nome": "Vaga 3",
+      "ocupada": true,
+      "data": "2026-06-23 20:05:36"
+    },
+    {
+      "id": 4,
+      "nome": "Vaga 4",
+      "ocupada": true,
+      "data": "2026-06-23 20:05:36"
+    },
+    {
+      "id": 2,
+      "nome": "Vaga 2",
+      "ocupada": true,
+      "data": "2026-06-23 20:05:37"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-23 20:05:40"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-23 20:05:42"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-23 20:05:46"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-23 20:05:49"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-23 20:05:55"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-23 20:05:56"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-23 20:05:58"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-23 20:06:02"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-23 20:06:35"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-23 20:06:36"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-23 20:06:37"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-23 20:06:38"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-23 20:06:44"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-23 20:06:45"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-23 20:06:46"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-23 20:06:47"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-23 20:06:47"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-23 20:06:48"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-23 20:06:54"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-23 20:06:58"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-23 20:07:00"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-23 20:07:26"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-23 20:12:06"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-23 20:12:07"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-23 20:12:08"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-23 20:12:09"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-23 20:12:10"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-23 20:12:12"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": true,
+      "data": "2026-06-23 20:12:12"
+    },
+    {
+      "id": 1,
+      "nome": "Vaga 1",
+      "ocupada": false,
+      "data": "2026-06-23 20:12:20"
     }
   ],
   "catraca": {
     "aberta": false,
     "comando": "fechar",
-    "ultima_atualizacao": "2026-06-17 10:26:50"
+    "ultima_atualizacao": "2026-06-23 20:12:59"
   }
 }

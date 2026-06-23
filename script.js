@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = window.location.origin;
 
 const totalVagas = document.getElementById("total-vagas");
 const vagasLivres = document.getElementById("vagas-livres");
@@ -10,6 +10,7 @@ const botaoCatraca = document.getElementById("botao-catraca");
 
 const TEMPO_ATUALIZACAO = 3000;
 const TEMPO_CATRACA_ABERTA = 5;
+const ID_VAGA_EXIBIDA = 1;
 
 let catracaEstaAberta = false;
 let intervaloCronometro = null;
@@ -40,6 +41,21 @@ function atualizarResumo(resumo) {
   totalVagas.textContent = resumo.total;
   vagasLivres.textContent = resumo.livres;
   vagasOcupadas.textContent = resumo.ocupadas;
+}
+
+function filtrarVagasExibidas(vagas) {
+  return vagas.filter((vaga) => vaga.id === ID_VAGA_EXIBIDA);
+}
+
+function criarResumoDasVagas(vagas) {
+  const total = vagas.length;
+  const ocupadas = vagas.filter((vaga) => vaga.ocupada).length;
+
+  return {
+    total,
+    livres: total - ocupadas,
+    ocupadas,
+  };
 }
 
 function criarCardVaga(vaga) {
@@ -73,7 +89,7 @@ function mostrarErro() {
   statusApi.textContent = "Nao foi possivel carregar a API.";
   listaVagas.innerHTML = `
     <div class="mensagem-erro">
-      Verifique se o backend esta rodando em http://127.0.0.1:8000.
+      Verifique se o backend esta rodando no mesmo endereco do painel.
     </div>
   `;
 }
@@ -135,12 +151,12 @@ async function carregarPainel() {
   try {
     statusApi.textContent = "Carregando dados...";
 
-    const resumo = await buscarJson("/resumo");
     const dadosVagas = await buscarJson("/vagas");
     const catraca = await buscarJson("/catraca");
+    const vagasExibidas = filtrarVagasExibidas(dadosVagas.vagas);
 
-    atualizarResumo(resumo);
-    mostrarVagas(dadosVagas.vagas);
+    atualizarResumo(criarResumoDasVagas(vagasExibidas));
+    mostrarVagas(vagasExibidas);
     atualizarCatraca(catraca);
 
     statusApi.textContent = "Dados atualizados.";
