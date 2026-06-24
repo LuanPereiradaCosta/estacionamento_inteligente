@@ -15,6 +15,7 @@ __pycache__/
 
 # Instrucoes locais usadas pelo assistente de desenvolvimento
 AGENTS.md
+!agents.md
 
 # Arquivos locais do sistema operacional
 Thumbs.db
